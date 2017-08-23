@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ke.recognition">
+
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application>
+
+
+        <service
+            android:name="com.kernal.plateid.AuthService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="kernal.plateid.authservice"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.kernal.plateid.RecogService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="kernal.plateid.recogService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
+
