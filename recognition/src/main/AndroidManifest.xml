@@ -8,7 +8,6 @@
 
     <application>
 
-
         <service
             android:name="com.kernal.plateid.AuthService"
             android:enabled="true">
