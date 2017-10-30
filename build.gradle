@@ -22,7 +22,7 @@ allprojects {
     }
 }
 
-ext.support_version = "26.1.0"
+ext.support_version = "26.0.2"
 
 
 task clean(type: Delete) {
