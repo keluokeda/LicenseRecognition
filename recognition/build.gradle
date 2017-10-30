@@ -25,19 +25,19 @@ android {
 
 
 
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
-    }
+
 
 
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
     compile "com.android.support:appcompat-v7:$support_version"
+    compile files('src/main/jniLibs/android_auth.jar')
+    compile files('src/main/jniLibs/bcprov-ext-jdk15-146.jar')
+    compile files('src/main/jniLibs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    compile files('src/main/jniLibs/pki.jar')
+    compile files('src/main/jniLibs/plate_id_sdk.jar')
 
 
 }
