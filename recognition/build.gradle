@@ -3,13 +3,13 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 group = 'com.github.keluokeda'
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
 
@@ -31,13 +31,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile "com.android.support:appcompat-v7:$support_version"
-    compile files('src/main/jniLibs/android_auth.jar')
-    compile files('src/main/jniLibs/bcprov-ext-jdk15-146.jar')
-    compile files('src/main/jniLibs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
-    compile files('src/main/jniLibs/pki.jar')
-    compile files('src/main/jniLibs/plate_id_sdk.jar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation files('src/main/jniLibs/android_auth.jar')
+    implementation files('src/main/jniLibs/bcprov-ext-jdk15-146.jar')
+    implementation files('src/main/jniLibs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    implementation files('src/main/jniLibs/pki.jar')
+    implementation files('src/main/jniLibs/plate_id_sdk.jar')
 
 
 }
